@@ -45,6 +45,12 @@ nav {
         color: var(--colorTextOne);
         text-decoration: none;
         font-weight: bold;
+
+        &.selected {
+            color: var(--colorSelected);
+            font-size: 1.2em;
+        }
+    
     }
 
     a:hover {
