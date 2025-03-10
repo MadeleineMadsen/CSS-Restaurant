@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="css/contact.css">
+</head>
+<body>
+    <header>
+        <h1>Restaruant KEA</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html" title="Homepage">Home</a></li>
+            <li><a href="menu.html" title="Menu page">Menu</a></li>
+            <li><a href="contact.html" title="Contact page">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+        <form action="mailto:info@restaurantkea.dk" method="post">
+            <fieldset>
+                <h2>Contact form</h2>
+
+                <div>
+                    <label for="txtFullName">Full name</label>
+                    <input type="text" name="full_name" id="txtFullName" required pattern="([A-Za-z-]+ )+[A-Za-z-]+">
+                </div>
+
+                <div>
+                    <label for="txtPhoneNo">Phone no.</label>
+                    <input type="tel" name="phone_no" id="txtPhoneNo" required pattern="[0-9]{8}">
+                </div>
+
+                <div>
+                    <label for="txtEmail">E-mail</label>
+                    <input type="email" name="email" id="txtEmail" required>
+                </div>
+
+                <div>
+                    <label for="txtPersons">Persons</label>
+                    <input type="number" name="persons" id="txtPersons" value="2" required min="1" max="20">
+                </div>
+
+                <div>
+                    <label for="txtDateTime">Date and time</label>
+                    <input type="datetime-local" name="date_and_time" id="txtDateTime" required>
+                </div> 
+
+                <div>
+                    <label for="txtInformation">Further information</label><br>
+                    <textarea id="txtInformation" name="further_information"></textarea>
+                </div> 
+
+                <div>
+                    <button type="submit">Send</button>
+                </div>
+            </fieldset>
+        </form>
+
+        <section>
+            <img src="img/map.jpg" alt="Map">
+
+            <address>
+                <p>
+                    <span>Guldbergsgade 29N</span>
+                    <span>2200 Copenhagen</span>
+                </p>
+
+                <p>Phone no.: <a href="tel:20825370" title="Phone Restaurant KEA">20 82 53 70</a></p>
+
+                <p>E-mail: <a href="mailto:info@restaurantkea.dk" title="Email Restaurant KEA">info@restaurantkea.dk</a></p>
+            </address>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 - CSS Restaurant - Madeleine Madsen</p>
+    </footer>
+</body>
+</html>

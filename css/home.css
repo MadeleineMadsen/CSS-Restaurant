@@ -1,0 +1,79 @@
+@import 'styles.css';
+
+/*---------- Desktop ----------*/
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 1.5rem;
+}
+
+.Text {
+    grid-column: 1 / 3;
+
+    p {
+        margin: 1.5rem 0rem;
+    }
+
+    ul {
+        list-style-type: none;
+    }
+
+    li {
+        margin: 0.5rem 0rem;
+        font-weight: bold;
+    }
+}
+
+.Picture {
+    grid-column: 3 / 4;
+}
+
+.Quote {
+    grid-column: 1 / 4;
+
+    blockquote {
+        background-color: var(--colorBox);
+        padding: 1.25rem;
+        border-radius: 0.5rem;
+        font-style: italic;
+        margin: 0;
+    
+        cite {
+            display: block;
+            margin-top: 0.625rem;
+            font-style: normal;
+            font-weight: bold;
+        }
+    }
+}
+
+/*---------- Mobile ----------*/
+
+@media only screen and (max-width: 768px) {
+    main {
+        grid-template-columns: 1fr; /* Kun én kolonne */
+        grid-template-rows: auto auto auto;
+        text-align: left;
+    }
+
+    .Picture {
+        grid-column: 1 / 2;
+        grid-row: 1;
+    }
+
+    .Text {
+        grid-column: 1 / 2;
+        grid-row: 2;
+
+        p {
+            margin-top: 0;
+        }
+    }
+
+    .Quote {
+        grid-column: 1 / 2;
+        grid-row: 3;
+    }
+}
