@@ -84,7 +84,7 @@ img {
         }
 
         li {
-            border-bottom: 1px solid var(--colorTextOne);
+            border-bottom: thin solid var(--colorTextOne);
         }
     }
 }
